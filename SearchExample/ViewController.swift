@@ -21,6 +21,13 @@ class ViewController: UIViewController {
         
         // Storyboardから読み込む
         searchResultsController = self.storyboard?.instantiateViewController(identifier: "SearchResultsController") as? SearchResultsController
+        // サジェスト側で何か候補を押したとき
+        searchResultsController.searchTappedClosure = {
+            // 遷移してから
+            self.performSegue(withIdentifier: "GreenA", sender: nil)
+            // フォーカスを外す（そうしないと戻った時にまたキーボードが出てくる）
+            self.searchController.isActive = false
+        }
         
         // SearchControllerを設定する
         searchController = UISearchController(searchResultsController: searchResultsController)
@@ -34,6 +41,7 @@ class ViewController: UIViewController {
         searchController.searchBar.searchTextField.textColor = .darkGray
         searchController.searchBar.searchTextField.font = UIFont.systemFont(ofSize: 15)
         searchController.searchBar.placeholder = "検索"
+        searchController.searchBar.delegate = self
  
         // これを設定しないと崩れが生じる
         definesPresentationContext = true
@@ -59,3 +67,10 @@ extension ViewController: UISearchResultsUpdating {
     }
 }
 
+extension ViewController: UISearchBarDelegate {
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        print("検索ボタン押されたよ ", searchBar.text!)
+        
+        self.performSegue(withIdentifier: "GreenA", sender: nil)
+    }
+}

@@ -16,6 +16,7 @@
 		1EF16187255CF5EF00ED319E /* SearchExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF16186255CF5EF00ED319E /* SearchExampleTests.swift */; };
 		1EF16192255CF5EF00ED319E /* SearchExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF16191255CF5EF00ED319E /* SearchExampleUITests.swift */; };
 		1EF161A3255CF6EF00ED319E /* SearchResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF161A2255CF6EF00ED319E /* SearchResultsController.swift */; };
+		1EF161AC255D0B5700ED319E /* GreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF161AB255D0B5700ED319E /* GreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		1EF16191255CF5EF00ED319E /* SearchExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchExampleUITests.swift; sourceTree = "<group>"; };
 		1EF16193255CF5EF00ED319E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1EF161A2255CF6EF00ED319E /* SearchResultsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsController.swift; sourceTree = "<group>"; };
+		1EF161AB255D0B5700ED319E /* GreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				1EF1617A255CF5EF00ED319E /* LaunchScreen.storyboard */,
 				1EF1617D255CF5EF00ED319E /* Info.plist */,
 				1EF161A2255CF6EF00ED319E /* SearchResultsController.swift */,
+				1EF161AB255D0B5700ED319E /* GreenViewController.swift */,
 			);
 			path = SearchExample;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				1EF16170255CF5ED00ED319E /* AppDelegate.swift in Sources */,
 				1EF16172255CF5EE00ED319E /* SceneDelegate.swift in Sources */,
 				1EF161A3255CF6EF00ED319E /* SearchResultsController.swift in Sources */,
+				1EF161AC255D0B5700ED319E /* GreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

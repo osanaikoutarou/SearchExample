@@ -8,6 +8,8 @@
 import UIKit
 
 class SearchResultsController: UIViewController {
+    
+    var searchTappedClosure: (() -> Void)?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,15 +17,10 @@ class SearchResultsController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func tappedGoGreen(_ sender: Any) {
+        // 検索候補が押されたとしたら
+        searchTappedClosure?()
     }
-    */
+    
 
 }
